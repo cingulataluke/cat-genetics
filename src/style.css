@@ -1,0 +1,10 @@
+body {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.div-cat {
+    border: 2px solid grey;
+    border-radius: 6px;
+    margin: 1%;
+}
