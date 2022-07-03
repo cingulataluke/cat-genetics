@@ -1,22 +1,22 @@
 import { Cat } from './cat.js';
-import { Genes } from './genes.js';
+import { Genes, randomElem } from './genes.js';
 
 const btnRandomCat = document.getElementById("random-gen");
 const btnWildtypeCat = document.getElementById("wildtype-gen");
 
 const txtCurrentGenes = document.getElementById("current-genes");
 
-let currentCat = new Cat("Unnamed", "F", Genes.randomGenes());
+let currentCat;
 
 btnRandomCat.onclick = () =>
 {
-    currentCat = new Cat("Random", "F", Genes.randomGenes());
+    currentCat = new Cat("Random", randomElem(["M", "F"]), Genes.randomGenes());
     updateCurrentGenes();
 }
 
 btnWildtypeCat.onclick = () =>
 {
-    currentCat = new Cat("Wildtype", "M", Genes.wildtypeGenes());
+    currentCat = new Cat("Wildtype", randomElem(["M", "F"]), Genes.wildtypeGenes());
     updateCurrentGenes();
 }
 
