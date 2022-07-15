@@ -21,6 +21,7 @@ class Cat {
 		return "Name : "+this.name+
 			   "<br>Sex : "+this.sex+
 			   "<br>Genes : "+this.genes.showGenes()+
+			   "<br>(meaning : "+this.genes.showAssessedGenes()+")"+
 			   "<br>ID : "+this.id;
 	}
 }
