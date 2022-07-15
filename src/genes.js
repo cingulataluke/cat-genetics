@@ -98,7 +98,7 @@ class Genes {
 		else status.push("Dense");
 
 		// dilute_modifier
-		if (equalArrs(this.dilute, ["dm", "dm"])) status.push("Lighter");
+		if (equalArrs(this.dilute_modifier, ["dm", "dm"])) status.push("Lighter");
 		else status.push("Normal");
 
 		// white_spotting

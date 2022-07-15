@@ -1,4 +1,5 @@
 import { Genes } from './genes.js';
+import { Phenotype } from './phenotype.js';
 
 let catID = 1;
 
@@ -10,6 +11,7 @@ class Cat {
 		if (this.sex == "M") this.genes.orange[1] = "";
 		this.id = catID;
 		catID++;
+		this.phenotype = Phenotype.generatePhenotype(this.genes);
 	}
 
 	static newKitten(mother, father, name, mutationRate) {
@@ -22,6 +24,7 @@ class Cat {
 			   "<br>Sex : "+this.sex+
 			   "<br>Genes : "+this.genes.showGenes()+
 			   "<br>(meaning : "+this.genes.showAssessedGenes()+")"+
+			   "<br>Looks : "+this.phenotype.showPhenotype()+
 			   "<br>ID : "+this.id;
 	}
 }
