@@ -23,6 +23,7 @@ class Genes {
 	// each gene is an array of 2 vals (for each chromosome)
 	// special case : orange gene is on x chromosome so only 1 copy in male cats
 	// TODO : add genes
+	// (bengal modifier)
 	constructor(black, orange, dilute, dilute_modifier, 
 				white_spotting, agouti, tabby, spotted_tabby, 
 				ticked_tabby, silver, wide_band, colorpoint, 
@@ -61,6 +62,7 @@ class Genes {
 		wildtypeGenes.agouti = ["A", "A"];
 		wildtypeGenes.tabby = ["TaM", "TaM"];
 		wildtypeGenes.colorpoint = ["C", "C"];
+		wildtypeGenes.length = ["l", "l"];
 		
 		return wildtypeGenes;
 	}
